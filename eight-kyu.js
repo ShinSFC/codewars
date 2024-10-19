@@ -12,3 +12,28 @@
 // }
 
 // console.log(sumMix(arr));
+
+
+// repeat string x times
+// my solution
+// function repeatStr(n, s) {
+//     let str = '';
+//     for (let i = 0; i < n; i++) {
+//         str += s;
+//     }
+//     return str;
+// }
+
+// console.log(repeatStr(3, 'n'));
+
+
+// book solution
+// function repeatStr (n, s) {
+//   return s.repeat(n);
+// }
+
+// remove all spaces in string
+// function noSpace(x) {
+//   return x.replaceAll(' ', '');
+// }
+
