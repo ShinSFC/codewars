@@ -22,9 +22,13 @@
 // Simple, given a string of words, return the length of the shortest word(s).
 // String will never be empty and you do not need to account for different data types.
 
-function findShort(s){
-  let arr = s.split(' ');
-  return arr.map(str => str.length).sort((a, b) => a - b).shift();
+// function findShort(s){
+//   let arr = s.split(' ');
+//   return arr.map(str => str.length).sort((a, b) => a - b).shift();
+// }
+
+// Complete the solution so that it returns true if the first argument(string) passed in ends with the 2nd argument (also a string).
+
+function solution(str, ending){
+  return str.slice(str.length - ending.length) == ending;
 }
-
-
