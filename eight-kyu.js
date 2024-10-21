@@ -76,3 +76,8 @@
 //   if (p1 == 'scissors' && p2 == 'paper') return 'Player 1 won!';
 // }
 
+// find third angle of a triangle if given two angles
+
+// function otherAngle(a, b) {
+//   return 180 - a - b;
+// }
