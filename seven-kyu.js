@@ -49,3 +49,16 @@
 //     let sqRt = Math.sqrt(sq); 
 //     return Number.isInteger(sqRt) ? Math.pow(sqRt + 1, 2) : -1
 // }
+
+// Given a string, you have to return a string in which each character (case-sensitive) is repeated once.
+
+// my solution
+// function doubleChar(str) {
+//   let arr = str.split('');
+//   return arr.map(let => let + let).join('');
+// }
+
+// better solution
+// function doubleChar(str) {
+//   return [...str].map(v=>v+v).join('');
+// }
