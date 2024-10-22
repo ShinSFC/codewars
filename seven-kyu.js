@@ -62,3 +62,16 @@
 // function doubleChar(str) {
 //   return [...str].map(v=>v+v).join('');
 // }
+
+// Write a function to split a string and convert it into an array of words.
+
+// function stringToArray(string){
+//   return string.split(' ');
+// }
+
+// Capitalize every word in string
+
+String.prototype.toJadenCase = function (String) {
+  let arr =  this.split(' ');
+  return arr.map(word => word[0].toUpperCase() + word.slice(1)).join(' ');
+};
