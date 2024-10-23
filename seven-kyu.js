@@ -84,10 +84,22 @@
 
 // Given a list of unique numbers sorted in ascending order, return a new list so that the values increment by 1 for each index from the minimum value up to the maximum value (both included).
 
-function pipeFix(numbers){
-  arr = [];
-  for (let i = numbers[0]; i <= numbers[numbers.length - 1]; i++) {
-    arr.push(i)
-  }
-  return arr;
+// function pipeFix(numbers){
+//   arr = [];
+//   for (let i = numbers[0]; i <= numbers[numbers.length - 1]; i++) {
+//     arr.push(i)
+//   }
+//   return arr;
+// }
+
+// Your task is to make two functions ( max and min, or maximum and minimum, etc., depending on the language ) that receive a list of integers as input, and return the largest and lowest number in that list, respectively. Each function returns one number
+
+var min = function(list){
+    list.sort((a, b) => a - b);
+    return list[0];
+}
+
+var max = function(list){
+    list.sort((a, b) => b - a);
+    return list[0];
 }
