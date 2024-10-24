@@ -107,12 +107,22 @@
 // You are given an odd-length array of integers, in which all of them are the same, except for one single number.
 // Complete the method which accepts such an array, and returns that single different number.
 
-function stray(numbers) {
-  numbers.sort((a, b) => a - b);
-  if (numbers[numbers.length - 1] != numbers[numbers.length - 2]) {
-      return numbers.pop();
-    } else {
-      return numbers.shift();
-    }
+// function stray(numbers) {
+//   numbers.sort((a, b) => a - b);
+//   if (numbers[numbers.length - 1] != numbers[numbers.length - 2]) {
+//       return numbers.pop();
+//     } else {
+//       return numbers.shift();
+//     }
 
+// }
+
+// You get an array of numbers, return the sum of all of the positives ones.
+
+function positiveSum(arr) {
+  let sum = 0;
+  for (num of arr) {
+    if (num > 0) sum += num;
+  }
+  return sum;
 }
