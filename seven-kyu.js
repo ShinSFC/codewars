@@ -94,12 +94,25 @@
 
 // Your task is to make two functions ( max and min, or maximum and minimum, etc., depending on the language ) that receive a list of integers as input, and return the largest and lowest number in that list, respectively. Each function returns one number
 
-var min = function(list){
-    list.sort((a, b) => a - b);
-    return list[0];
-}
+// var min = function(list){
+//     list.sort((a, b) => a - b);
+//     return list[0];
+// }
 
-var max = function(list){
-    list.sort((a, b) => b - a);
-    return list[0];
+// var max = function(list){
+//     list.sort((a, b) => b - a);
+//     return list[0];
+// }
+
+// You are given an odd-length array of integers, in which all of them are the same, except for one single number.
+// Complete the method which accepts such an array, and returns that single different number.
+
+function stray(numbers) {
+  numbers.sort((a, b) => a - b);
+  if (numbers[numbers.length - 1] != numbers[numbers.length - 2]) {
+      return numbers.pop();
+    } else {
+      return numbers.shift();
+    }
+
 }
