@@ -132,3 +132,13 @@
 // function sortByLength (array) {
 //     return array.sort((a, b) => a.length - b.length);
 // }
+
+// Write a function that takes a single non-empty string of only lowercase and uppercase ascii letters (word) as its argument, and returns an ordered list containing the indices of all capital (uppercase) letters in the string.
+
+var capitals = function (word) {
+  let result = []
+  word.split('').reduce((acc, letter, idx) => {
+    if (letter === letter.toUpperCase()) result.push(idx);
+  }, []);
+  return result;
+}
