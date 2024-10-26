@@ -135,10 +135,17 @@
 
 // Write a function that takes a single non-empty string of only lowercase and uppercase ascii letters (word) as its argument, and returns an ordered list containing the indices of all capital (uppercase) letters in the string.
 
-var capitals = function (word) {
-  let result = []
-  word.split('').reduce((acc, letter, idx) => {
-    if (letter === letter.toUpperCase()) result.push(idx);
-  }, []);
-  return result;
+// var capitals = function (word) {
+//   let result = []
+//   word.split('').reduce((acc, letter, idx) => {
+//     if (letter === letter.toUpperCase()) result.push(idx);
+//   }, []);
+//   return result;
+// }
+
+// Your task is to make a function that can take any non-negative integer as an argument and return it with its digits in descending order. Essentially, rearrange the digits to create the highest possible number.
+
+function descendingOrder(n) {
+  let array = n.toString().split('').sort().reverse();
+  return Number(array.join(''));
 }
