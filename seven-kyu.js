@@ -159,10 +159,17 @@
 
 // Complete the square sum function so that it squares each number passed into it and then sums the results together.
 
-function squareSum(numbers){
-  let result = 0;
-  numbers.reduce((sum, num) => {
-    result += (num * num);
-  }, 0);
-  return result;
-  }
+// function squareSum(numbers){
+//   let result = 0;
+//   numbers.reduce((sum, num) => {
+//     result += (num * num);
+//   }, 0);
+//   return result;
+// }
+
+// Create a function that returns the sum of the two lowest positive numbers given an array of minimum 4 positive integers. No floats or non-positive integers will be passed.
+
+function sumTwoSmallestNumbers(numbers) {  
+  let lowestNumbers = numbers.sort((a, b) => a - b).slice(0,2);
+  return lowestNumbers.reduce(((sum, num) => sum + num), 0);
+}
