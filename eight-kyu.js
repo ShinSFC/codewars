@@ -86,3 +86,12 @@ function otherAngle(a, b) {
 function twoSort(s) {
  return s.sort().shift().split('').join('***');
 }
+
+// Make a function that receive age, and return what they drink.
+
+function peopleWithAgeDrink(old) {
+  return old < 14 ? 'drink toddy' :
+    old < 18 ? 'drink coke' :
+    old < 21 ? 'drink beer' :
+    'drink whisky';
+};
