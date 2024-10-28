@@ -95,3 +95,13 @@ function peopleWithAgeDrink(old) {
     old < 21 ? 'drink beer' :
     'drink whisky';
 };
+
+// Create a function that gives a personalized greeting. This function takes two parameters: name and owner.
+
+// my solution
+function greet (name, owner) {
+  return name==owner?"Hello boss":"Hello guest"
+}
+
+// one line solution from book
+const greet = (name, owner) => name == owner ? 'Hello boss' : 'Hello guest';
