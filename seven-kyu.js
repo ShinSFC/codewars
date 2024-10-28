@@ -145,7 +145,24 @@
 
 // Your task is to make a function that can take any non-negative integer as an argument and return it with its digits in descending order. Essentially, rearrange the digits to create the highest possible number.
 
-function descendingOrder(n) {
-  let array = n.toString().split('').sort().reverse();
-  return Number(array.join(''));
-}
+// function descendingOrder(n) {
+//   let array = n.toString().split('').sort().reverse();
+//   return Number(array.join(''));
+// }
+
+// Given an integral number, determine if it's a square number:
+
+// return n < 0 ? false
+//     : n === 0 ? true
+//     : Number.isInteger(Math.sqrt(n)) ? true
+//     : false;
+
+// Complete the square sum function so that it squares each number passed into it and then sums the results together.
+
+function squareSum(numbers){
+  let result = 0;
+  numbers.reduce((sum, num) => {
+    result += (num * num);
+  }, 0);
+  return result;
+  }
