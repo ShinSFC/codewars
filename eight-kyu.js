@@ -99,9 +99,16 @@ function peopleWithAgeDrink(old) {
 // Create a function that gives a personalized greeting. This function takes two parameters: name and owner.
 
 // my solution
-function greet (name, owner) {
-  return name==owner?"Hello boss":"Hello guest"
-}
+// function greet (name, owner) {
+//   return name==owner?"Hello boss":"Hello guest"
+// }
 
 // one line solution from book
-const greet = (name, owner) => name == owner ? 'Hello boss' : 'Hello guest';
+// const greet = (name, owner) => name == owner ? 'Hello boss' : 'Hello guest';
+
+// Write a function to convert a name into initials. This kata strictly takes two words with one space in between them.
+
+// function abbrevName(name){
+//   let splitName = name.split(' ');
+//   return splitName[0][0].toUpperCase() + '.' + splitName[1][0].toUpperCase();
+// }
