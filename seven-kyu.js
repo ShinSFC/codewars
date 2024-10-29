@@ -177,10 +177,5 @@
 // you are asked to square every digit of a number and concatenate them.
 
 function squareDigits(num){
-  let result = num
-    .toString()
-    .split('')
-    .map(num => Number(num) * Number(num))
-    .join('')
-  return Number(result);
+    return Number(num.toString().split('').map(num => Number(num) * Number(num)).join(''))
 }
