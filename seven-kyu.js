@@ -173,3 +173,14 @@
 //   let lowestNumbers = numbers.sort((a, b) => a - b).slice(0,2);
 //   return lowestNumbers.reduce(((sum, num) => sum + num), 0);
 // }
+
+// you are asked to square every digit of a number and concatenate them.
+
+function squareDigits(num){
+  let result = num
+    .toString()
+    .split('')
+    .map(num => Number(num) * Number(num))
+    .join('')
+  return Number(result);
+}
