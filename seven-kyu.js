@@ -176,6 +176,23 @@
 
 // you are asked to square every digit of a number and concatenate them.
 
-function squareDigits(num){
-    return Number(num.toString().split('').map(num => Number(num) * Number(num)).join(''))
+// function squareDigits(num){
+//     return Number(num.toString().split('').map(num => Number(num) * Number(num)).join(''))
+// }
+
+// Given the triangle of consecutive odd numbers:
+// Calculate the sum of the numbers in the nth row of this triangle
+
+// this might not work for for 1
+
+function rowSumOddNumbers(n) {
+  let result = 0;
+  if (n === 1) {
+    result = 2;
+  } else {
+    for (let i = 0; i < n + 1; i++ ) {
+      result += n + ((n - 1) * (n - 1)); 
+    }
+  }
+  return result - 1;
 }
