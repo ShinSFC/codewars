@@ -196,3 +196,13 @@ function rowSumOddNumbers(n) {
   }
   return result - 1;
 }
+
+// examples:
+// accum("abcd") -> "A-Bb-Ccc-Dddd"
+// accum("RqaEzty") -> "R-Qq-Aaa-Eeee-Zzzzz-Tttttt-Yyyyyyy"
+// accum("cwAt") -> "C-Ww-Aaa-Tttt"
+
+function accum(s) {
+	const string = [...s].map((ltr, idx) => ltr.repeat(idx + 1))
+  return string.map((word) => word.slice(0, 1).toUpperCase() + word.slice(1).toLowerCase()).join('-');
+}
