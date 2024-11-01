@@ -118,3 +118,19 @@ function peopleWithAgeDrink(old) {
 // function simpleMultiplication(number) {
 //     return number % 2 == 0 ? number * 8 : number * 9;
 // }
+
+// Write a function that takes an array of numbers and returns the sum of the numbers. The numbers can be negative or non-integer. If the array does not contain any numbers then you should return 0.
+
+// function sum (numbers) {
+//   return numbers.reduce((acc, num) => acc + num, 0)
+// }
+
+// Write a function that returns both the minimum and maximum number of the given list/array.
+
+function minMax(arr) {
+  let result = [];
+  arr.sort((a, b) => a - b);
+  result[0] = arr[0];
+  result[1] = arr[arr.length - 1];
+  return result;
+  }
