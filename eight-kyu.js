@@ -131,3 +131,7 @@ function fakeBin(x){
   return x.split('').map((num) => num < 5 ? '0' : '1').join('');
 }
 
+// Given an array of integers, return a new array with each value doubled.
+
+const maps = (x) => x.map((num) => num * 2)
+
