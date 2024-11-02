@@ -209,6 +209,7 @@ function accum(s) {
 
 
 // Write a function that returns both the minimum and maximum number of the given list/array.
+
 // function minMax(arr) {
 //   let result = [];
 //   arr.sort((a, b) => a - b);
@@ -216,3 +217,15 @@ function accum(s) {
 //   result[1] = arr[arr.length - 1];
 //   return result;
 // }
+
+// You are provided with a list (or array) of integer pairs. Elements of each pair represent the number of people that get on the bus (the first item) and the number of people that get off the bus (the second item) at a bus stop.
+// Your task is to return the number of people who are still on the bus after the last bus stop (after the last array). 
+
+// my solution
+var number = function(busStops){
+  let pplOn = busStops.reduce((sum, num) => sum + num[0], 0);
+  return busStops.reduce((sum, num) => sum - num[1], pplOn);
+}
+
+// book solution
+// const number = (busStops) => busStops.reduce((rem, [on, off]) => rem + on - off, 0);
