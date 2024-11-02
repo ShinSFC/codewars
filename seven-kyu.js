@@ -206,3 +206,13 @@ function accum(s) {
 	const string = [...s].map((ltr, idx) => ltr.repeat(idx + 1))
   return string.map((word) => word.slice(0, 1).toUpperCase() + word.slice(1).toLowerCase()).join('-');
 }
+
+
+// Write a function that returns both the minimum and maximum number of the given list/array.
+// function minMax(arr) {
+//   let result = [];
+//   arr.sort((a, b) => a - b);
+//   result[0] = arr[0];
+//   result[1] = arr[arr.length - 1];
+//   return result;
+// }

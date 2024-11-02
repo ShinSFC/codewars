@@ -125,12 +125,3 @@ function peopleWithAgeDrink(old) {
 //   return numbers.reduce((acc, num) => acc + num, 0)
 // }
 
-// Write a function that returns both the minimum and maximum number of the given list/array.
-
-function minMax(arr) {
-  let result = [];
-  arr.sort((a, b) => a - b);
-  result[0] = arr[0];
-  result[1] = arr[arr.length - 1];
-  return result;
-  }
