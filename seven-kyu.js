@@ -229,3 +229,20 @@ var number = function(busStops){
 
 // book solution
 // const number = (busStops) => busStops.reduce((rem, [on, off]) => rem + on - off, 0);
+
+// Your task is to write a function that takes a string and return a new string with all vowels removed.
+
+function disemvowel(str) {
+  const vowel = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U'];
+  let result = '';
+  const arr = str.split('');
+  for ( vwl of vowel ) {
+    result = arr.filter((letter) => !vowel.includes(letter));
+  }
+  return result.join('');
+}
+
+//Make a program that filters a list of strings and returns a list with only your friends name in it.
+//If a name has exactly 4 letters in it, you can be sure that it has to be a friend of yours!
+
+const friend = (friends) => friends.filter((name) => name.length == 4);
