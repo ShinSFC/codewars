@@ -246,3 +246,21 @@ function disemvowel(str) {
 //If a name has exactly 4 letters in it, you can be sure that it has to be a friend of yours!
 
 const friend = (friends) => friends.filter((name) => name.length == 4);
+
+// Implement the function which takes an array containing the names of people that like an item.
+
+function likes(names) {
+  let result = '';
+  if (names.length == 0) {
+    result = 'no one likes this';
+  } else if (names.length == 1) {
+     result = names[0] + ' likes this'; 
+  } else if (names.length == 2) {
+    result = `${names[0]} and ${names[1]} like this`
+  } else if (names.length == 3) {
+    result = `${names[0]}, ${names[1]} and ${names[2]} like this`;
+  } else {
+    result = `${names[0]}, ${names[1]} and ${names.length - 2} others like this`;
+  }
+  return result;   
+}
