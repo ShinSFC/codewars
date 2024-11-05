@@ -139,3 +139,16 @@ const maps = (x) => x.map((num) => num * 2)
 // You get given the time in hours and you need to return the number of litres Nathan will drink, rounded to the smallest value.
 
 const litres = time => Math.floor(time / 2);
+
+// Create a function that accepts a string and a single character, and returns an integer of the count of occurrences the 2nd argument is found in the first one.
+
+function strCount(str, letter){  
+  let result = 0;
+  let arr = str.split('')
+  for (ltr of arr) {
+    if (ltr == letter) {
+      result += 1;
+    }
+  }
+  return result;
+}
