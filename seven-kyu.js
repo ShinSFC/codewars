@@ -247,3 +247,7 @@ function disemvowel(str) {
 
 const friend = (friends) => friends.filter((name) => name.length == 4);
 
+//Input will consist of a list of pairs. Each pair contains information for a single potential member. 
+//To be a senior, a member must be at least 55 years old and have a handicap greater than 7.
+
+const openOrSenior = data => data.map((num) => (num[0] >= 55 && num[1] > 7) ? 'Senior' : 'Open');

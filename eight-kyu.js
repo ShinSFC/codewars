@@ -152,3 +152,4 @@ function strCount(str, letter){
   }
   return result;
 }
+
