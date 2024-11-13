@@ -270,12 +270,16 @@ function SeriesSum(n) {
 
 //The sum is kept for 'Y' years in the bank where interest 'I' is paid yearly. After paying taxes 'T' for the year the new sum is re-invested.
 
-function calculateYears(principal, interest, tax, desired) {
-if ( principal == desired) return 0;
-let totalYears = 0;
-for ( let i = 1; principal <= desired; i++ ) {
-    principal += (principal * interest) - (principal * interest * tax);
-    totalYears = i;
- }
-return totalYears;
-}
+// function calculateYears(principal, interest, tax, desired) {
+// if ( principal == desired) return 0;
+// let totalYears = 0;
+// for ( let i = 1; principal <= desired; i++ ) {
+//     principal += (principal * interest) - (principal * interest * tax);
+//     totalYears = i;
+//  }
+// return totalYears;
+// }
+
+// In this kata you will create a function that takes a list of non-negative integers and strings and returns a new list with the strings filtered out.
+
+const filter_list = l => l.filter(item => item === Number(item));
