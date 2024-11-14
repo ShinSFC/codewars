@@ -34,3 +34,16 @@ function likes(names) {
   }
   return result;   
 }
+
+// Playing with digits
+
+function digPow(n, p){
+  let num = 0;
+  const arr = n.toString().split(''); 
+  let ex = p;
+  for (let i = 0; i < n.toString().length; i++) {
+    num += Math.pow(arr[i], ex);
+    ex++;
+  }
+  return num % n === 0 ? num / n : -1;
+}

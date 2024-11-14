@@ -250,21 +250,21 @@ const friend = (friends) => friends.filter((name) => name.length == 4);
 //Input will consist of a list of pairs. Each pair contains information for a single potential member. 
 //To be a senior, a member must be at least 55 years old and have a handicap greater than 7.
 
-const openOrSenior = data => data.map((num) => (num[0] >= 55 && num[1] > 7) ? 'Senior' : 'Open');
+// const openOrSenior = data => data.map((num) => (num[0] >= 55 && num[1] > 7) ? 'Senior' : 'Open');
 
 // Your task is to write a function which returns the n-th term of the following series, which is the sum of the first n terms of the sequence (n is the input parameter).
 
-function SeriesSum(n) {
-  if (n == 0) return '0.00';
-  if (n == 1) return '1.00';
-  let result = 1;
-  let num = 1;
-  for (let i = 2; i <= n; i++) {
-    result += (1 / (num += 3));
-  }
-  return (Math.round(result * 100) / 100).toFixed(2).toString();
+// function SeriesSum(n) {
+//   if (n == 0) return '0.00';
+//   if (n == 1) return '1.00';
+//   let result = 1;
+//   let num = 1;
+//   for (let i = 2; i <= n; i++) {
+//     result += (1 / (num += 3));
+//   }
+//   return (Math.round(result * 100) / 100).toFixed(2).toString();
 
-}
+// }
 
 //Mr. Scrooge has a sum of money 'P' that he wants to invest. Before he does, he wants to know how many years 'Y' this sum 'P' has to be kept in the bank in order for it to amount to a desired sum of money 'D'.
 
@@ -282,9 +282,9 @@ function SeriesSum(n) {
 
 // In this kata you will create a function that takes a list of non-negative integers and strings and returns a new list with the strings filtered out.
 
-const filter_list = l => l.filter(item => item === Number(item));
+// const filter_list = l => l.filter(item => item === Number(item));
 
 // Write a function which takes a list of strings and returns each line prepended by the correct number.
 // The numbering starts at 1. The format is n: string. Notice the colon and space in between.
 
-var number = array => array.map((item, idx) => `${idx + 1}: ${item}`);
+// var number = array => array.map((item, idx) => `${idx + 1}: ${item}`);
