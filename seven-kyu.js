@@ -288,3 +288,10 @@ const friend = (friends) => friends.filter((name) => name.length == 4);
 // The numbering starts at 1. The format is n: string. Notice the colon and space in between.
 
 // var number = array => array.map((item, idx) => `${idx + 1}: ${item}`);
+
+// Two to One
+
+function longest(s1, s2) {
+  const newArr = new Set(s1.concat(s2).split('').sort());
+  return [...newArr].join('');
+}
