@@ -47,3 +47,16 @@ function digPow(n, p){
   }
   return num % n === 0 ? num / n : -1;
 }
+
+// Persistent Bugger
+
+function persistence(num) {
+  if (String(num).length == 1) return 0;
+  let result = String(num).split('').reduce((result, digit) => result * digit, 1);
+  let counter = 1;
+  while (result.toString().length != 1) {
+    result = String(result).split('').reduce((result, digit) => result * digit, 1);
+    counter++;
+    }
+  return counter;
+}
