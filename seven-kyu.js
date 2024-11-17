@@ -296,13 +296,20 @@ function longest(s1, s2) {
   return [...newArr].join('');
 }
 
-// Mexican Wave      
+// Array Array Array
 
-function wave(str) {
+function explode(x){
+  let sum = 0;
   let result = [];
-  for (let i = 0; i <= str.length - 1; i++) {
-    if (str[i] === ' ') continue;
-    result.push(str.substring(0, i) + str[i].toUpperCase() + str.slice(i + 1));
-  }
-  return result;
+  
+  typeof x[0] === 'number' && typeof x[1] === 'number' ? sum = x[0] + x[1] :
+    typeof x[0] === 'number' ? sum = x[0] :
+    typeof x[1] === 'number' ? sum = x[1] :
+      sum = 'Void!';
+  
+    for (let i = sum; sum > 0; sum--) {
+      result.push(x);
+    }
+  
+  return sum === 'Void!' ? sum : result;
 }

@@ -60,3 +60,14 @@ function persistence(num) {
     }
   return counter;
 }
+
+// Mexican Wave      
+
+function wave(str) {
+  let result = [];
+  for (let i = 0; i <= str.length - 1; i++) {
+    if (str[i] === ' ') continue;
+    result.push(str.substring(0, i) + str[i].toUpperCase() + str.slice(i + 1));
+  }
+  return result;
+}
