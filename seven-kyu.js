@@ -295,3 +295,14 @@ function longest(s1, s2) {
   const newArr = new Set(s1.concat(s2).split('').sort());
   return [...newArr].join('');
 }
+
+// Mexican Wave      
+
+function wave(str) {
+  let result = [];
+  for (let i = 0; i <= str.length - 1; i++) {
+    if (str[i] === ' ') continue;
+    result.push(str.substring(0, i) + str[i].toUpperCase() + str.slice(i + 1));
+  }
+  return result;
+}
