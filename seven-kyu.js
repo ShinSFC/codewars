@@ -328,3 +328,19 @@ function explode(x){
   
   return arr.reduce((sum, num) => sum + num, 0)
 }
+
+// Exes and Ohs
+
+function XO(str) {
+  let oCount = 0;
+  let xCount = 0;
+  
+  [...str.toLowerCase()].forEach((ltr) => {
+    if (ltr === 'x') xCount += 1; 
+    if (ltr === 'o') oCount += 1;
+  });
+  
+  return (oCount === 0 && xCount === 0) ? true :
+    oCount === xCount ? true :
+      false;
+}
