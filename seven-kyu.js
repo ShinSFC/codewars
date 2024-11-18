@@ -313,3 +313,18 @@ function explode(x){
   
   return sum === 'Void!' ? sum : result;
 }
+
+// Beginner Series #3 Sum of Numbers
+
+ function getSum(a, b) {
+  if (a === b) return a;
+  const start = Math.min(a, b);
+  const end = Math.max(a, b);
+  let arr = [];
+   
+  for (let i = start; i <= end; i++) {
+    arr.push(i);
+  }
+  
+  return arr.reduce((sum, num) => sum + num, 0)
+}
