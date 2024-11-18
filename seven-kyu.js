@@ -344,3 +344,7 @@ function XO(str) {
     oCount === xCount ? true :
       false;
 }
+
+//Remove anchor from URL
+
+const removeUrlAnchor = (url) => url.includes('#') ? url.slice(0, url.indexOf('#')) : url
