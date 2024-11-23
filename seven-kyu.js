@@ -348,3 +348,16 @@ function XO(str) {
 //Remove anchor from URL
 
 const removeUrlAnchor = (url) => url.includes('#') ? url.slice(0, url.indexOf('#')) : url
+
+// Vowel Count
+
+function getCount(str) {
+  const vowel = 'aeiou';
+  let count = 0;
+  str.split('').map((ltr) => {
+    if (vowel.includes(ltr)) {
+        count++
+        }  
+  });
+  return count;
+}
