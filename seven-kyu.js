@@ -361,3 +361,12 @@ function getCount(str) {
   });
   return count;
 }
+
+// Highest and Lowest
+
+function highAndLow(numbers){
+  const array = numbers.split(' ').sort((a, b) => a - b);
+  const one = array[0];
+  const two = array[array.length - 1];
+  return array[0] == array[array.length - 1] ? one + ' ' + one : two + ' ' + one;
+}
