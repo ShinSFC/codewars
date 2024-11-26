@@ -153,3 +153,6 @@ function strCount(str, letter){
   return result;
 }
 
+// Beginner - Reduce but Grow
+
+const grow = (x) => x.reduce((result, num) => result * num, 1)
