@@ -370,3 +370,13 @@ function highAndLow(numbers){
   const two = array[array.length - 1];
   return array[0] == array[array.length - 1] ? one + ' ' + one : two + ' ' + one;
 }
+
+// Small enough? - Beginner
+
+function smallEnough(a, limit){
+  let result = true;
+  a.forEach(item => {
+    if (item > limit) result = false;
+  });
+  return result;
+}
