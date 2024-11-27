@@ -381,3 +381,17 @@ function smallEnough(a, limit){
   return result;
 }
 
+// Complementary DNA
+
+function dnaStrand(dna) {
+  let arr = [...dna];
+  arr = arr.map((ltr) => { 
+    switch (ltr) {
+        case 'A' : return 'T';
+        case 'T' : return 'A';
+        case 'G' : return 'C';
+        case 'C' : return 'G';
+    }
+    });
+  return arr.join('');
+}
