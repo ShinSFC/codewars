@@ -33,9 +33,9 @@ function repeatStr (n, s) {
 }
 
 // remove all spaces in string
-// function noSpace(x) {
-//   return x.replaceAll(' ', '');
-// }
+function noSpace(x) {
+  return x.replaceAll(' ', '');
+}
 
 // return a string 'num sheep...' * num
 
