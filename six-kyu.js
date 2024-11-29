@@ -71,3 +71,15 @@ function wave(str) {
   }
   return result;
 }
+
+// Write Number in Expanded Form
+
+function expandedForm(num) {
+  return num
+    .toString()
+    .split('').reverse()
+    .map((num, idx) => num + '0'.repeat(idx))
+    .filter((num) => num > 0)
+    .reverse()
+    .join(' + ');
+}
