@@ -405,3 +405,10 @@ function checkExam(array1, array2) {
   }
   return score < 0 ? 0 : score;
 }
+
+// Is this a triangle?
+
+function isTriangle(a,b,c) {
+  const arr = [a, b, c].sort((a, b) => a - b);
+  return (arr[0] + arr[1]) > arr[2] ? true : false;
+}
