@@ -83,3 +83,22 @@ function expandedForm(num) {
     .reverse()
     .join(' + ');
 }
+
+// Title Case
+
+function titleCase(title, minorWords) {
+  if (title === '') return '';
+  (typeof minorWords !== 'string') ? minorWords = [] : 
+  minorWords = minorWords.split(' ').map(word => word.toLowerCase());
+  
+  title = title.split(' ');
+  const firstWord = title.shift()
+  const firstWordFixed = firstWord.slice(0, 1).toUpperCase() + firstWord.slice(1).toLowerCase();
+  
+  title = title.map(word => word.toLowerCase());
+  title = title.map((word) => {
+    return minorWords.includes(word) ? word : word.slice(0, 1).toUpperCase() + word.slice(1).toLowerCase();
+  });
+  title.unshift(firstWordFixed);
+  return title.join(' ');      
+}
