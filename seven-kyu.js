@@ -412,3 +412,10 @@ function isTriangle(a,b,c) {
   const arr = [a, b, c].sort((a, b) => a - b);
   return (arr[0] + arr[1]) > arr[2] ? true : false;
 }
+
+// Get the Middle Character
+
+function getMiddle(s) {
+  return (s.length % 2) === 0 ? (s[(s.length / 2) - 1] + s[s.length / 2]) : 
+  s[Math.floor(s.length / 2)];
+}
