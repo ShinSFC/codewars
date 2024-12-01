@@ -428,3 +428,21 @@ var isAnagram = function(test, original) {
   test = test.toLowerCase().split('').sort();
   return test.every((ltr, idx) => ltr == arr[idx]);
 }
+
+// Matrix creation
+
+// [1, 0, 0, 0, 0], [0, 1, 0, 0, 0], [0, 0, 1, 0, 0], [0, 0, 0, 1, 0], [0, 0, 0, 0, 1]
+
+function getMatrix(number) {
+  let result = [];
+  
+  for (let i = 0; i < number; i++) {
+    let array = [];
+    for (let x = 0; x < number; x++) {
+      array.push(i == x ? 1 : 0);
+    }
+    result.push(array);
+  }
+  
+  return result;
+} 
