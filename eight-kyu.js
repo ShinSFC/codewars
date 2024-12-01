@@ -159,7 +159,4 @@ const grow = (x) => x.reduce((result, num) => result * num, 1)
 
 // Calculate average
 
-function findAverage(array) {
-  if (array.length === 0) return 0;
-  return array.reduce((total, num) => total += num, 0) / array.length;
-}
+const findAverage = (array) => array.length === 0 ? 0 : array.reduce((total, num) => total += num, 0) / array.length;
