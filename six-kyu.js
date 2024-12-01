@@ -102,3 +102,25 @@ function titleCase(title, minorWords) {
   title.unshift(firstWordFixed);
   return title.join(' ');      
 }
+
+// Take a Ten Minutes Walk
+
+function isValidWalk(walk) {
+  let result = '';
+  let nCount = 0;
+  let sCount = 0;
+  let wCount = 0;
+  let eCount = 0;
+  if (walk.length !== 10) {
+    result = false;
+  } else {
+    walk.forEach((ltr) => {
+      if (ltr === 'n') nCount += 1;
+      if (ltr === 's') sCount += 1;
+      if (ltr === 'w') wCount += 1;
+      if (ltr === 'e') eCount += 1;
+      });
+      ((nCount === sCount) && (wCount === eCount)) ? result = true : result = false;
+  }
+  return result;
+}
