@@ -419,3 +419,12 @@ function getMiddle(s) {
   return (s.length % 2) === 0 ? (s[(s.length / 2) - 1] + s[s.length / 2]) : 
   s[Math.floor(s.length / 2)];
 }
+
+// Anagram Detection
+
+var isAnagram = function(test, original) {
+  if (test.length !== original.length) return false;
+  const arr = original.toLowerCase().split('').sort();
+  test = test.toLowerCase().split('').sort();
+  return test.every((ltr, idx) => ltr == arr[idx]);
+}
