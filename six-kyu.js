@@ -124,3 +124,18 @@ function isValidWalk(walk) {
   }
   return result;
 }
+
+// What century is it?
+
+function whatCentury(year) {
+  let num = (Number(year.slice(0, 2)));
+  year.slice(-2) == '00' ? num : num += 1;
+  num = num.toString();
+  return num === '11' ? num + 'th' :
+    num === '12' ? num + 'th' :
+    num.slice(-1) === '1' ? num + 'st' :
+    num.slice(-1) === '2' ? num + 'nd' :
+    num === '13' ? num + 'th' :
+    num.slice(-1) === '3' ? num + 'rd' :
+    num + 'th';
+}
