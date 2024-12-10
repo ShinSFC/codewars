@@ -454,3 +454,7 @@ const adjacentElementsProduct = (array) => Number(array.map((num, idx) => array[
 // Largest Elements
 
 const largest = (n, array) => array.sort((a, b) => a - b).slice(array.length - n, array.length);
+
+// Help Suzuki rake his garden!
+
+const rakeGarden = (garden) => garden.split(' ').map((item) => item == 'gravel' || item == 'rock' ? item : 'gravel').join(' ');
