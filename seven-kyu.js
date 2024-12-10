@@ -450,3 +450,7 @@ function getMatrix(number) {
 // Maximum Product
 
 const adjacentElementsProduct = (array) => Number(array.map((num, idx) => array[idx] * array[idx + 1]).sort((a, b) => a - b).slice(-2, -1));
+
+// Largest Elements
+
+const largest = (n, array) => array.sort((a, b) => a - b).slice(array.length - n, array.length);

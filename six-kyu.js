@@ -139,3 +139,4 @@ function whatCentury(year) {
     num.slice(-1) === '3' ? num + 'rd' :
     num + 'th';
 }
+
