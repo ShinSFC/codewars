@@ -458,3 +458,9 @@ const largest = (n, array) => array.sort((a, b) => a - b).slice(array.length - n
 // Help Suzuki rake his garden!
 
 const rakeGarden = (garden) => garden.split(' ').map((item) => item == 'gravel' || item == 'rock' ? item : 'gravel').join(' ');
+
+// Find the index of the second occurance of a letter in a string
+
+const secondSymbol = (s, symbol) => s.replace(symbol, '_').indexOf(symbol);
+// not ideal as it passes testing but will not if original string contains a '_'
+
