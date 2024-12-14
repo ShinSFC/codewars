@@ -468,13 +468,11 @@ const secondSymbol = (s, symbol) => s.replace(symbol, '_').indexOf(symbol);
 
 function validatePIN (pin) {
   let falseCount = 0;
-  let trueCount = 0;
   const numbers = '1234567890'
   if (pin < 0) falseCount++ 
-  pin.length == 4 || pin.length == 6 ? trueCount++ : falseCount++;
+  if (pin.length != 4 && pin.length != 6) falseCount++;
   pin.split('').map((num) => {
-    numbers.includes(num) ? trueCount++ : falseCount++;
+    numbers.includes(num) ? null : falseCount++;
     });
-  pin = pin.split('').filter((num) => !isNaN(Number(num))).join('');
   return falseCount == 0 ? true : false;
 }
