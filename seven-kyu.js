@@ -464,3 +464,17 @@ const rakeGarden = (garden) => garden.split(' ').map((item) => item == 'gravel' 
 const secondSymbol = (s, symbol) => s.replace(symbol, '_').indexOf(symbol);
 // not ideal as it passes testing but will not if original string contains a '_'
 
+// Regex validate PIN code
+
+function validatePIN (pin) {
+  let falseCount = 0;
+  let trueCount = 0;
+  const numbers = '1234567890'
+  if (pin < 0) falseCount++ 
+  pin.length == 4 || pin.length == 6 ? trueCount++ : falseCount++;
+  pin.split('').map((num) => {
+    numbers.includes(num) ? trueCount++ : falseCount++;
+    });
+  pin = pin.split('').filter((num) => !isNaN(Number(num))).join('');
+  return falseCount == 0 ? true : false;
+}
