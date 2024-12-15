@@ -476,3 +476,11 @@ function validatePIN (pin) {
     });
   return falseCount == 0 ? true : false;
 }
+
+// Debug the functions EASY
+
+const multi = (arr) => arr.reduce((product, num) => product *= num, 1 );
+
+const add = (arr) => arr.reduce((sum, num) => sum += num, 0);
+
+const reverse = (str) => str.split('').reverse().join('');
