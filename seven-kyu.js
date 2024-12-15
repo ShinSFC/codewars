@@ -484,3 +484,7 @@ const multi = (arr) => arr.reduce((product, num) => product *= num, 1 );
 const add = (arr) => arr.reduce((sum, num) => sum += num, 0);
 
 const reverse = (str) => str.split('').reverse().join('');
+
+// Inspiring Strings
+
+const longestWord = (stringOfWords) => stringOfWords.split(' ').sort((a, b) => a.length - b.length).pop();
