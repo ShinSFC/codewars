@@ -488,3 +488,26 @@ const reverse = (str) => str.split('').reverse().join('');
 // Inspiring Strings
 
 const longestWord = (stringOfWords) => stringOfWords.split(' ').sort((a, b) => a.length - b.length).pop();
+
+// Debug Basic Calculator
+
+var calculate = function calculate(a, o, b) {
+ return o === "+" ? a + b : 
+  o === "-" ? a - b :
+  o === "/" && (a == 0 || b === 0 ) ? null :
+  o === '/' ? a / b :
+  o === "*" ? a * b :
+  null;
+}
+
+var calculate = function calculate(a, o, b) {
+ switch (o) {
+   case "+" : return a + b;
+   case "-" : return a - b;
+   case "/" : 
+     if (a === 0 || b === 0 ) return null;
+     return a / b;
+   case "*" : return a * b;
+   default : return null;
+  }
+}
