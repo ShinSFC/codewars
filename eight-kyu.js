@@ -167,3 +167,7 @@ const findAverage = (array) => array.length === 0 ? 0 : array.reduce((total, num
 function sayHello(name) {
   return 'Hello, ' + name;
 }
+
+// A Needle in the Haystack
+
+const findNeedle = (haystack) => `found the needle at position ${haystack.findIndex(element => element == 'needle')}`;
