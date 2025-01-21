@@ -140,3 +140,11 @@ function whatCentury(year) {
     num + 'th';
 }
 
+// Array.diff
+
+function arrayDiff(a, b) {
+  for (const num of b) {
+    a = a.filter((item) => item != num)
+  }
+  return a;
+}
