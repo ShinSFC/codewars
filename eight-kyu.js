@@ -175,3 +175,8 @@ const findNeedle = (haystack) => `found the needle at position ${haystack.findIn
 // SpeedCode #2 - Array Madness
 
 const arrayMadness = (a, b) => a.reduce((sum, num) => sum + (num * num), 0) > b.reduce((sum, num) => sum + (num ** 3), 0);
+
+// Find the smallest integer in the array
+
+const findSmallestInt = (arr) => arr.sort((a, b) => a - b).shift();
+
