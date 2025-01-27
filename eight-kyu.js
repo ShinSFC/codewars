@@ -191,3 +191,8 @@ const solution = (str) => str.split('').reverse().join('');
 // DNA to RNA Conversion
 
 const DNAtoRNA = (dna) => dna.replaceAll('T', 'U');
+
+// Grasshopper-Check for factor
+
+const checkForFactor = (base, factor) => base % factor == 0;
+
