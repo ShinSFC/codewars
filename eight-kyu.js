@@ -183,3 +183,7 @@ const findSmallestInt = (arr) => arr.sort((a, b) => a - b).shift();
 // Beginner Series #2 Clock
 
 const past = (h, m, s) => (h * 3600000) + (m * 60000) + (s * 1000);
+
+// Reversed Strings
+
+const solution = (str) => str.split('').reverse().join('');
