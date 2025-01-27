@@ -187,3 +187,7 @@ const past = (h, m, s) => (h * 3600000) + (m * 60000) + (s * 1000);
 // Reversed Strings
 
 const solution = (str) => str.split('').reverse().join('');
+
+// DNA to RNA Conversion
+
+const DNAtoRNA = (dna) => dna.replaceAll('T', 'U');
